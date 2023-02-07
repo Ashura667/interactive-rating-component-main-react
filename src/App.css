@@ -62,3 +62,8 @@
     color:hsl(217, 12%, 63%);
     font-size: 18px;
 }
+.notation 
+{
+    background-color: green;
+    width: 100px;
+}
