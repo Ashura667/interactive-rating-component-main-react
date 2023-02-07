@@ -17,9 +17,9 @@ function App() {
           Please let us know how we did with your support request. All feedback is appreciated to help us
 improve our offering!
           </div>
-          <div className="notation">
+          <section className="notation">
             <Notationscale />
-            </div>
+            </section>
         </div>
     </div>
   );
