@@ -3,6 +3,7 @@ import logo from "./images/icon-star.svg";
 import Notationscale from "./Notationscale";
 function App() {
   return (
+
     <div className="card_rating">
         
         <div className="all_element_card">
