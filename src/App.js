@@ -1,6 +1,6 @@
 import "./App.css";
 import logo from "./images/icon-star.svg";
-import Notation_scale from "./Notation_scale";
+import Notationscale from "./Notationscale";
 function App() {
   return (
     <div className="card_rating">
@@ -18,7 +18,7 @@ function App() {
 improve our offering!
           </div>
           <div className="notation">
-            <Notation_scale />
+            <Notationscale />
             </div>
         </div>
     </div>
