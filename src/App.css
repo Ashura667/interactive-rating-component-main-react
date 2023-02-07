@@ -1,8 +1,37 @@
-html, body {
-  height: 100%;
+.card_rating 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: auto;
+    
+}
+#root 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background_card 
+{
+    background-color: rgba(33,40,50,255);
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+    border-radius: 30px;
+}
+.background_logo 
+{
+    background-color: hsl(213, 19%, 18%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
-.root {
-  height: 100%;
-  background-color: hsl(216, 12%, 8%);
+.logo_star 
+{
+    height: auto;
 }
