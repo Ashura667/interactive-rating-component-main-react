@@ -1,14 +1,22 @@
-import './App.css';
-import logo from './images/icon-star.svg'
+import "./App.css";
+import logo from "./images/icon-star.svg";
 function App() {
   return (
-    <div className='card_rating'>
-        <div className='background_card'>
-          
-          <div className='background_logo'>
-          <img className='logo_star' src={logo} alt="fdsfsd"/>
+    <div className="card_rating">
+        
+        <div className="all_element_card">
 
+          <div className="background_logo">
+            <img className="logo_star" src={logo} alt="fdsfsd" />
           </div>
+          <div className="titre">
+          How did we do?
+          </div>
+          <div className="sous_titre">
+          Please let us know how we did with your support request. All feedback is appreciated to help us
+improve our offering!
+          </div>
+          
         </div>
     </div>
   );
