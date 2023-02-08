@@ -1,36 +1,29 @@
 import "./Notationscale.css";
 import {useState} from "react";
-var selected = null
 function Notationscale() {
-  let numbers = [1,2,3,4,5];
+  const [nombre, setnombre] = useState([{num:1, selected:false, id: "numero1"},
+    {num:2, selected:false, id: "numero2"},
+    {num:3, selected:false, id: "numero3"},
+    {num:4, selected:false, id: "numero4"},
+    {num:5, selected:false, id: "numero5"}]);
+
   const [state, setState] = useState(0);
 
   return (<section className="etst">
-    {numbers.map((item) => {
-      var test = 'numero'+item
-      return(<div id={test} onClick={() => {console.log(test);
-        var iddoc = document.getElementById(test);
-        if (selected ==null)
+    {nombre.map((item) => {
+      return(<div id={item.id} onClick={() => {setState(item.selected =true);
+        var iddoc = document.getElementById(item.id);
+        if (item.selected ===true)
         {
           iddoc.style.backgroundColor = "orange";
-          selected = test;
           setState(item)
+          nombre.filter((item) => {console.log(item)})
         }
         else {
-          var iddoc2 = document.getElementById(selected);
-          iddoc2.style.backgroundColor= "hsl(213, 19%, 18%)";
 
-          iddoc.style.backgroundColor = "orange";
-          selected = test;
-          setState(item)
 
         }
-        }} className="notation_number">{item}</div>)} )}
-    <button onClick={() => {if (state !==0)
-    {
-      console.log(state)
-    }
-    }} >SUBMIT</button>
+        }} className="notation_number">{item.num}</div>)} )}
   </section>)
 }
 export default Notationscale;
