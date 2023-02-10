@@ -11,13 +11,15 @@ function Notationscale() {
 
   return (<section className="etst">
     {nombre.map((item) => {
-      return(<div id={item.id} onClick={() => {setState(item.selected =true);
+      return(<div id={item.id} onClick={() => {setnombre(item.selected =true);
         var iddoc = document.getElementById(item.id);
         if (item.selected ===true)
         {
+          
           iddoc.style.backgroundColor = "orange";
+
           setState(item)
-          nombre.filter((item) => {console.log(item)})
+
         }
         else {
 
