@@ -1,11 +1,14 @@
-.etst 
+.entire_block_rating_number
 {
-    
+
     display: flex;
-    justify-content: space-around;
-    gap: 10px;
+    justify-content: center;
     align-items: center;
-    color: white;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+
     
 }
 .notation_number
@@ -19,7 +22,9 @@
     align-items: center;
     border-radius: 50%;
     margin-bottom: 25px;
-    font-size: 1.2em;
+    font-size: 16px;
+    font-family: 'Overpass', sans-serif;
+    color: #7C8798;
 }
 
 .notation_number:hover
@@ -28,3 +33,21 @@
     background-color: orange;
     transition-duration: 1s;
 }
+
+.selected
+
+{
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-family: 'Overpass', sans-serif;
+    color: #7C8798;
+
+}
+

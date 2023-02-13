@@ -7,25 +7,23 @@ function Notationscale() {
     {num:4, selected:false, id: "numero4"},
     {num:5, selected:false, id: "numero5"}]);
 
-  const [state, setState] = useState(0);
-
-  return (<section className="etst">
-    {nombre.map((item) => {
-      return(<div id={item.id} onClick={() => {setState(item.selected =true);
-        var iddoc = document.getElementById(item.id);
-        if (item.selected ===true)
-        {
-          
-          iddoc.style.backgroundColor = "orange";
-
-          setState(item)
-
-        }
-        else {
-
-
-        }
-        }} className="notation_number">{item.num}</div>)} )}
-  </section>)
+    const handleClick = (e) => {
+        const id = e.target.id;
+        const newNombre = [...nombre];
+        newNombre.forEach((item) => {
+            if (item.id === id) {
+                item.selected = !item.selected;
+            } else {
+                item.selected = false;
+            }
+        });
+        setnombre(newNombre);
+    }
+  return <section className="entire_block_rating_number">
+    {nombre.map((item) => { return(
+      <div id={item.id} onClick={handleClick} className={item.selected ? "selected" : "notation_number"}>
+              {item.num}
+        </div>)})}
+  </section>
 }
 export default Notationscale;
