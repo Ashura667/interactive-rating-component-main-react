@@ -44,6 +44,16 @@ function Notationscale() {
   else
   {
         if (note===false) {setSelected(false)}
-  }
+        else {
+            var data = nombre.filter((item) =>item.selected ===true)
+            console.log()
+            return (<div>
+                <div className="notation_submit">
+                    resultat : {data[0].num} </div>
+
+            </div>  )   
+            }
+        }
+
 }
 export default Notationscale;
