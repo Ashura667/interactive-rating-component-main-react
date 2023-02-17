@@ -21,7 +21,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-bottom: 25px;
     font-size: 16px;
     font-family: 'Overpass', sans-serif;
     color: #7C8798;
@@ -44,10 +43,30 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-bottom: 25px;
     font-size: 16px;
     font-family: 'Overpass', sans-serif;
     color: #7C8798;
 
 }
 
+.button_submit {
+        background-color: #e87e09;
+        color: white;
+        font-family: 'Overpass', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        border-radius: 50px;
+        width: 90%;
+        height: 50px;
+        cursor: pointer;
+
+
+}
+
+.notation_submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}

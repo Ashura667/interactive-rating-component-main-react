@@ -6,7 +6,8 @@ function Notationscale() {
     {num:3, selected:false, id: "numero3"},
     {num:4, selected:false, id: "numero4"},
     {num:5, selected:false, id: "numero5"}]);
-
+  const [note, setnote] = useState(false);
+    const [selected, setSelected] = useState(false);
     const handleClick = (e) => {
         const id = e.target.id;
         const newNombre = [...nombre];
@@ -18,12 +19,31 @@ function Notationscale() {
             }
         });
         setnombre(newNombre);
+        setnote(true);
     }
-  return <section className="entire_block_rating_number">
-    {nombre.map((item) => { return(
-      <div id={item.id} onClick={handleClick} className={item.selected ? "selected" : "notation_number"}>
-              {item.num}
-        </div>)})}
-  </section>
+    const handlesubmit = () => {
+        setSelected(true)
+
+    }
+  if (selected === false)
+  {
+      return (
+          <div>
+              <section className="entire_block_rating_number">
+                  {nombre.map((item) => { return(
+                      <div id={item.id} onClick={handleClick} className={item.selected ? "selected" : "notation_number"}>
+                          {item.num}
+                      </div>)})}
+              </section>
+              <div className="notation_submit">
+                  <button className="button_submit" onClick={handlesubmit}>Submit</button>
+              </div>
+
+          </div>);
+  }
+  else
+  {
+        if (note===false) {setSelected(false)}
+  }
 }
 export default Notationscale;

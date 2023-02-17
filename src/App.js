@@ -21,6 +21,7 @@ improve our offering!
           <section className="notation">
             <Notationscale />
             </section>
+
         </div>
     </div>
   );
